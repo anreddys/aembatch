@@ -1,0 +1,54 @@
+
+<h1>info component</h1>
+
+<h3>Configure Component</h3>
+
+<p style="color:red;" >Using Sightly Getting Node Propeties </p>
+---------------------------------------------------------------------------------------
+<div>
+
+    <p>${properties.title}</p>
+    <p>${properties.description}</p>
+</div>
+
+
+<p style="color:red;">Using Java Use API Getting Node Properties</p> 
+---------------------------------------------------------------------------------------
+
+<div data-sly-use.info="com.aem.employ.core.pojo.Info">
+    <h1>${info.lowerCaseTitle}</h1>
+    <p>${info.lowerCaseDescription}</p>
+</div>
+
+
+<p style="color:red;">Using Sling Models  Getting resource Properties</p> 
+---------------------------------------------------------------------------------------
+
+<div data-sly-use.info="com.aem.employ.core.models.TestModel">
+    <h1>${info.title}</h1>
+    <p>${info.description}</p>
+</div>
+
+
+
+<p style="color:red;">Using WcmUsePojo  Accessing OsgiServices to Sightly Component</p> 
+---------------------------------------------------------------------------------------
+
+<div data-sly-use.info="com.aem.employ.core.pojo.Developer">
+    <h1>${info.details}</h1>
+
+</div>
+
+
+
+<p style="color:red;">Using Sling Model  Accessing OsgiServices to Sightly Component</p> 
+---------------------------------------------------------------------------------------
+
+<div data-sly-use.info="com.aem.employ.core.models.ServiceModel">
+    <h1>${info.details}</h1>
+
+</div>
+
+
+
+
