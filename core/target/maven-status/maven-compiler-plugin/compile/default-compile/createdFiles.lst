@@ -6,6 +6,7 @@ com\aem\employ\core\package-info.class
 com\aem\employ\core\pojo\Developer.class
 com\aem\employ\core\servlets\DemoPathBasedServlet.class
 com\aem\employ\core\devleperI\SightlySerivceInterface.class
+com\aem\employ\core\pojo\TouchMultiFieldPojo.class
 com\aem\employ\core\schedulers\SimpleScheduledTask.class
 com\aem\employ\core\models\ServiceModel.class
 com\aem\employ\core\pojo\Info.class
