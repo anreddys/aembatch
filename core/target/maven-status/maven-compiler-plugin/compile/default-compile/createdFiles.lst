@@ -7,9 +7,13 @@ com\aem\employ\core\pojo\Developer.class
 com\aem\employ\core\servlets\DemoPathBasedServlet.class
 com\aem\employ\core\devleperI\SightlySerivceInterface.class
 com\aem\employ\core\pojo\TouchMultiFieldPojo.class
+com\aem\employ\core\bean\JsonEmployeeBean.class
 com\aem\employ\core\schedulers\SimpleScheduledTask.class
 com\aem\employ\core\models\ServiceModel.class
 com\aem\employ\core\pojo\Info.class
+com\aem\employ\core\pojo\TextComponent2.class
 com\aem\employ\core\devloperimpl\SightlySerivce.class
 com\aem\employ\core\filters\LoggingFilter.class
 com\aem\employ\core\listeners\SimpleResourceListener.class
+com\aem\employ\core\pojo\TextComponent2Model.class
+com\aem\employ\core\servlets\DemoJsonServlet.class

@@ -1,0 +1,31 @@
+
+<h1>Employ Registration component</h1>
+
+
+
+<p style="color:red;" >Read Registration Values to Sling Servlet and Convert to Json Object and Display In Sightly Using Jquery</p>
+-----------------------------------------------------------------------------------------------------------------------------------
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"/>
+<sly data-sly-call="${clientlib.all @ categories='employ.regi'}"/>
+
+<body>
+<form action="" method="">
+Employee Id: <input type="text" name="empId" id="empId"/>
+Employee Name :<input type="text"  name ="empName"  id="empName"/>
+Employee Salary :<input type="text"  name ="empSalary"  id="empSalary"/>
+Employee Address :<input type="text"  name ="empAddress"  id="empAddress"/>
+<input type="submit" id="submit" name="submit" value="submit"/>
+
+-------------------------------------------------------
+<span id="id"></span>
+<span id="name"></span>
+<span id="salary"></span>
+<span id="address"></span>
+
+</form>
+
+
+
+
+
+</body>

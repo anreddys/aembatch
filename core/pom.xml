@@ -98,5 +98,16 @@
             <groupId>junit-addons</groupId>
             <artifactId>junit-addons</artifactId>
         </dependency>
-    </dependencies>
+        <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+         <dependency>
+       <groupId>com.google.code.gson</groupId>
+       <artifactId>gson</artifactId>
+        </dependency>  
+        <!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+<dependency>
+    <groupId>com.googlecode.json-simple</groupId>
+    <artifactId>json-simple</artifactId>
+</dependency>
+              
+       </dependencies>
 </project>
