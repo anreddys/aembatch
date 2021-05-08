@@ -11,11 +11,13 @@ import org.osgi.framework.Constants;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
+import com.aem.employ.core.dbutil.DatabaseConnectionHelper;
 import com.aem.employ.core.devleperI.SightlySerivceInterface;
 
 import javax.servlet.Servlet;
 import javax.servlet.ServletException;
 import java.io.IOException;
+import java.sql.Connection;
 
 @Component(service=Servlet.class,
            property={
@@ -30,6 +32,8 @@ public class DemoPathBasedServlet extends SlingAllMethodsServlet {
     private static final long serialVersionUid = 1L;
     
     @Reference
+    protected DatabaseConnectionHelper helper;
+    @Reference
     protected SightlySerivceInterface obj;
 
     @Override
@@ -37,7 +41,8 @@ public class DemoPathBasedServlet extends SlingAllMethodsServlet {
             final SlingHttpServletResponse resp) throws ServletException, IOException {
      String details=  obj.getDeveloperData();
      
-     
+    Connection con= helper.getDataBaseConnection("employ");
+    System.out.println("Connnection Successfull from Servlet"+con);
     	resp.getWriter().write(details);
     }
     

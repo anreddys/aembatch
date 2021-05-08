@@ -1,15 +1,24 @@
 package com.aem.employ.core.devloperimpl;
 
 import org.osgi.service.component.annotations.Component;
+import org.osgi.service.metatype.annotations.Designate;
 
+import com.aem.employ.core.customosgiconfiguration.CustomEmployOsgiConfiguration;
 import com.aem.employ.core.devleperI.SightlySerivceInterface;
 
 @Component(service=SightlySerivceInterface.class, immediate=true)
+@Designate(ocd =CustomEmployOsgiConfiguration.class)
 public class SightlySerivce implements SightlySerivceInterface{
 
+	
+	private  CustomEmployOsgiConfiguration obj;
 	@Override
 	public String getDeveloperName() {
 		// TODO Auto-generated method stub
+		
+		/* obj.getEmpId();
+		 obj.getEmpName();
+		 obj.getEmpSalary();*/
 		return "John";
 	}
 
